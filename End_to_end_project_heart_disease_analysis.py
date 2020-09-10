@@ -16,7 +16,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score
 from sklearn.metrics import plot_roc_curve
 
 # Import the data
-heart_disease = pd.read_csv("C:/Users/z011348/Desktop/ML/input/heart-disease.csv")
+heart_disease = pd.read_csv("C:/Users/Desktop/ML/input/heart-disease.csv")
 # print(heart_disease.shape)
 # print(heart_disease.isna().sum())
 # print(heart_disease.describe()) # to know the numeric details
