@@ -3,9 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # house prices file
-home_price = pd.read_csv("C:/Users/z011348/Desktop/ML/input/homeprices.csv")
+home_price = pd.read_csv("C:/Users/Desktop/ML/input/homeprices.csv")
 # print(home_price)
-price = pd.read_csv("C:/Users/z011348/Desktop/ML/input/prices.csv")
+price = pd.read_csv("C:/Users/Desktop/ML/input/prices.csv")
 
 X = home_price.drop("price", axis=1)
 y = home_price["price"]
@@ -32,4 +32,4 @@ print(model.score(X_train, y_train))
 pred_prices = model.predict(price)
 # print(pred_prices)
 price["prediction_price"] = pred_prices
-price.to_csv("C:/Users/z011348/Desktop/ML/output/prediction_prices.csv", index=False)
+price.to_csv("C:/Users/Desktop/ML/output/prediction_prices.csv", index=False)
