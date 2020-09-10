@@ -41,7 +41,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score
 from sklearn.metrics import plot_roc_curve
 
 # import training and validation sets
-df = pd.read_csv("C:/Users/z011348/Desktop/ML/input/bluebook-for-bulldozers/TrainAndValid.csv",
+df = pd.read_csv("C:/Users/Desktop/ML/input/bluebook-for-bulldozers/TrainAndValid.csv",
                  low_memory=False)
 #print(df.head())
 #print(df.info())
@@ -67,7 +67,7 @@ dates in it using 'parse_dates' parameter
 """
 
 # import the data again with parse dates
-df = pd.read_csv("C:/Users/z011348/Desktop/ML/input/bluebook-for-bulldozers/TrainAndValid.csv",
+df = pd.read_csv("C:/Users/Desktop/ML/input/bluebook-for-bulldozers/TrainAndValid.csv",
                  low_memory=False,
                  parse_dates=["saledate"]) # convert into yyyy-mm-dd
 print(df.saledate.dtype)
@@ -133,10 +133,10 @@ print("")
 #print(df_tmp.state[:10])
 
 # Save preprocessed data to aviod the decimal values for int
-df_tmp.to_csv("C:/Users/z011348/Desktop/ML/input/bluebook-for-bulldozers/train_tmp.csv",
+df_tmp.to_csv("C:/Users/Desktop/ML/input/bluebook-for-bulldozers/train_tmp.csv",
               index=False)
 # import the tmp data
-df_tmp = pd.read_csv("C:/Users/z011348/Desktop/ML/input/bluebook-for-bulldozers/train_tmp.csv")
+df_tmp = pd.read_csv("C:/Users/Desktop/ML/input/bluebook-for-bulldozers/train_tmp.csv")
 #print(df_tmp.isna().sum())
 
 """
@@ -294,7 +294,7 @@ print(show_scores(ideal_model))
 # Make predictions on test data set
 # -------------------------------------------------
 # import the data again with parse dates
-df_test = pd.read_csv("C:/Users/z011348/Desktop/ML/input/bluebook-for-bulldozers/Test.csv",
+df_test = pd.read_csv("C:/Users/Desktop/ML/input/bluebook-for-bulldozers/Test.csv",
                  low_memory=False,
                  parse_dates=["saledate"])
 
@@ -362,5 +362,5 @@ df_prediction_saleprice["SalePrice"] = test_pred
 print(df_prediction_saleprice)
 
 # Save the prediction results in the csv file
-df_prediction_saleprice.to_csv("C:/Users/z011348/Desktop/ML/output/bluebook-for-bulldozers/price_predictions.csv",
+df_prediction_saleprice.to_csv("C:/Users/Desktop/ML/output/bluebook-for-bulldozers/price_predictions.csv",
                                index=False)
