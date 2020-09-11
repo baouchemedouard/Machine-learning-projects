@@ -32,4 +32,4 @@ print(model.score(X_train, y_train))
 pred_prices = model.predict(price)
 # print(pred_prices)
 price["prediction_price"] = pred_prices
-price.to_csv("C:/Users/Desktop/ML/output/prediction_prices.csv", index=False)
+price.to_csv("C:/Users/Desktop/ML/output/prediction_prices.csv", index=False) 
