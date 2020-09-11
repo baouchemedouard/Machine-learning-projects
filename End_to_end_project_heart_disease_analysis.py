@@ -32,7 +32,7 @@ pd.crosstab(heart_disease.target, heart_disease.sex).plot(kind='bar',
 plt.title("Heart disease frequency for genders")
 plt.xlabel("0 - no disease, 1 - disease")
 plt.ylabel("number of count")
-plt.legend(["Female", "Male"])    # update legend 
+plt.legend(["Female", "Male"])    # update legend  
 plt.xticks(rotation=0)
 
 # create an another figure 
