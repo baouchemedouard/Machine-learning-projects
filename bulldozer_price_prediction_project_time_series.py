@@ -123,7 +123,7 @@ into Pandas categories
 print("=== Convert Strings to Pandas categories ===")
 # find columns which contains strings
 for label, content in df_tmp.items():
-    if pd.api.types.is_string_dtype(content):
+    if pd.api.types.is_string_dtype(content): 
        # print(label)
         df_tmp[label] = content.astype("category").cat.as_ordered()
 print(df_tmp.info())
